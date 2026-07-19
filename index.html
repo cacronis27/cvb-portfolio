@@ -558,8 +558,30 @@
   <div class="wrap">
     <div class="about-grid">
       <div class="reveal avatar-card">
-        <div class="avatar">CV</div>
-        <h3>Chester Vincent</h3>
+       <img src="chester.png"
+     alt="Chester Vincent"
+     style="
+        width:180px;
+        height:180px;
+        border-radius:50%;
+        object-fit:cover;
+        display:block;
+        margin:0 auto 18px;
+        border:5px solid #FFB020;
+        box-shadow:0 0 0 6px #0B0E14,0 0 0 7px #232939;
+        transition:all .3s ease;
+        cursor:pointer;
+     "
+     onclick="
+        if(this.style.transform==='scale(1.5)'){
+            this.style.transform='scale(1)';
+            this.style.zIndex='1';
+        }else{
+            this.style.transform='scale(1.5)';
+            this.style.zIndex='999';
+        }
+     ">
+	 <h3>Chester Vincent</h3>
         <div class="role">Local SEO &amp; Citations</div>
         <div class="avatar-stats">
           <div><strong>7</strong><span>Years experience</span></div>
